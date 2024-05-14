@@ -1,0 +1,634 @@
+html,
+body {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+.cover-box-parent {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.cover-box {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/cover.webp");
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6em;
+}
+
+body {
+  font-family: "Libre Franklin", sans-serif !important;
+}
+.serif {
+  font-family: "Merriweather", serif;
+}
+
+.cover-box h1 {
+  font-size: xxx-large;
+}
+
+.red-container {
+  padding: 20px;
+  background-color: red;
+  color: white;
+}
+
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  text-align: center;
+  scroll-snap-align: center;
+  box-sizing: border-box;
+  padding: 20px;
+  scroll-snap-align: start;
+}
+
+.disc-formats {
+  overflow: hidden;
+}
+
+.intoroduction {
+  height: 100vh;
+  overflow-x: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.disc {
+  animation: disc-animation-rev;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  z-index: 2;
+}
+
+.formats-subtext-parent {
+  position: relative;
+  bottom: 250px;
+  animation: subtext-animation-rev;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+.formats-subtext {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  z-index: 1;
+}
+
+@keyframes disc-animation {
+  from {
+    position: relative;
+    top: 0px;
+    transform: rotate(0deg);
+  }
+
+  to {
+    position: relative;
+    top: 250px;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes disc-animation-rev {
+  from {
+    position: relative;
+    top: 250px;
+    transform: rotate(45deg);
+  }
+
+  to {
+    position: relative;
+    top: 0px;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes subtext-animation {
+  from {
+    position: relative;
+    bottom: 400px;
+  }
+
+  to {
+    position: relative;
+    bottom: 0px;
+  }
+}
+
+@keyframes subtext-animation-rev {
+  from {
+    position: relative;
+    bottom: 0px;
+  }
+
+  to {
+    position: relative;
+    bottom: 400px;
+  }
+}
+
+.disc-formats:hover {
+  .disc {
+    animation: disc-animation;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+  }
+
+  .formats-subtext-parent {
+    animation: subtext-animation;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+  }
+}
+
+@media (max-width: 768px) {
+  .compat-text:before {
+    content: "Tap ";
+  }
+
+  .mobile-center {
+    display: flex;
+    text-justify: center;
+    position: relative;
+    left: 20px;
+    top: 40px;
+  }
+}
+
+@media (min-width: 769px) {
+  .compat-text:before {
+    content: "Hover ";
+  }
+}
+
+.section-non-100vh {
+  height: auto !important;
+}
+
+.type-conclusion {
+  margin: 1em;
+}
+
+.addpadding {
+  padding: 0.5em;
+}
+
+.remove-flex {
+  display: block !important;
+}
+
+.intros-parent {
+  overflow: hidden;
+}
+
+.align-center {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.warning-background {
+  position: absolute;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+}
+
+.before-logo-appears-color {
+  color: white;
+}
+
+.warning-box {
+  position: relative !important;
+  display: block !important;
+  width: 50em;
+  height: 40em;
+  color: white;
+  overflow: hidden;
+  top: 100px;
+}
+
+.warning-box h4 {
+  font-size: xxx-large;
+}
+
+.warning-background {
+  display: block !important;
+}
+
+.secondpart-first-text {
+  position: absolute;
+}
+
+.marquee-parent {
+  --gap: 0px;
+  display: flex;
+  overflow: hidden;
+  user-select: none;
+  gap: var(--gap);
+}
+
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+.marquee__content {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: var(--gap);
+  animation: scroll 10s linear infinite;
+  z-index: 1;
+}
+
+.marquee__content-reverse {
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  min-width: 100%;
+  gap: var(--gap);
+  animation: scroll 10s linear infinite;
+  animation-direction: reverse;
+  z-index: 1;
+}
+
+.marquee-overlay {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.intro-text {
+  color: red;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro-text-parent {
+  position: relative;
+  bottom: 50%;
+  z-index: 1;
+}
+
+.logo-container,
+.background-properties {
+  background-color: black;
+  position: relative;
+  color: white;
+}
+
+.centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.force-left {
+  text-align: left !important;
+}
+
+.intrologo-font-size {
+  font-size: 4em;
+}
+.intrologo-left {
+  text-align: left;
+  margin-right: 8em;
+}
+
+.logo-description-parent {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 110vh;
+  width: 100vw;
+  z-index: 10;
+  padding: 6em;
+}
+
+.videoplaybackwindow {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(51, 51, 51, 0.5);
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: row;
+  overflow: none;
+}
+
+.logobutton {
+  color: white;
+  background-color: blue;
+  border: 0px;
+  margin: 0.25em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  transition: 0.3s;
+}
+
+.background-marquee {
+  align-items: center;
+}
+
+.logobutton:hover {
+  color: black;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.marquee__content-reverse img,
+.marquee__content img {
+  filter: brightness(50%);
+}
+
+.menus-background {
+  display: flex;
+  background-color: black;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.color-white {
+  color: white;
+}
+
+.force-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.timeline-year {
+  color: white;
+  font-size: xx-large;
+  text-align: right;
+}
+
+.description-text {
+  font-size: medium;
+}
+
+.highlight {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(255, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.25s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  padding: 16.9%;
+  justify-content: center;
+}
+
+.highlight a:link,
+.highlight a:visited {
+  text-decoration: none;
+  color: white !important;
+}
+.img-div:hover .highlight {
+  opacity: 1;
+}
+.img-div {
+  position: relative;
+  width: 100%;
+}
+
+/* Make the image to responsive */
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container-parent {
+  display: flex;
+}
+
+.bootlegs-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  width: auto;
+}
+
+.bootleg-header-anim-4 {
+  background-color: black;
+}
+
+.skip-button-text-override {
+  display: block;
+  position: absolute;
+  font-size: medium;
+  margin: auto;
+}
+
+.width-wider-overwrite {
+  width: 20% !important;
+}
+
+.bootlegs-main-bg {
+  background-color: red;
+  width: 100em;
+  height: auto;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.bootlegs-main-container-spacing {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.bootleg-cover-art::after {
+  content: "Click the button below to see some of the artworks of those bootleg discs.";
+}
+
+@media (max-width: 768px) {
+  .bootleg-cover-art::after {
+    content: "Tap the button below to see some of the artworks of those bootleg discs.";
+  }
+
+  .mobile-full-width-image > div img {
+    width: 100%;
+  }
+}
+
+.bootlegcoverart {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(51, 51, 51, 1);
+  z-index: 10;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: row;
+  overflow: none;
+}
+
+.logobutton-override {
+  width: 100% !important;
+}
+
+#close {
+  position: absolute;
+  border: 0px;
+  background-color: transparent;
+  color: white;
+  top: 20px;
+  right: 50px;
+  align-items: right;
+  font-size: x-large;
+}
+
+.bootleg-img-div-1 {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .bootleg-img-div-1 {
+    object-fit: contain;
+    width: 100%;
+  }
+
+  .bootleg-desc-1-responsive::after {
+    content: " ROW 1, FROM LEFT: 'Alfie' on Video CD, as 'Disc 2' on the label said, that is the second part of the movie itself; 'Woman in Love' CD-ROM, which contains a large amount of songs in MP3 with WinAmp installer inside the disc, ROW 2: 'Best Collection Micheal Jackson', which is an unofficial compilation of Michael Jackson songs - do note that the 'Micheal' is intentionally misspelt to follow the label itself";
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-y: none;
+  }
+  .mobile-display-none {
+    display: none;
+  }
+
+  .pc-display {
+    display: none;
+  }
+
+  .text-start {
+    margin: 40px;
+  }
+  .videoplaybackwindow {
+    width: auto;
+  }
+
+  .videoplaybackwindowinner {
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 500px;
+  }
+  .golddisc-vid {
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 500px;
+  }
+
+  .nav-text::after {
+    content: "Use navigation button below to navigate between images";
+  }
+
+  .mob-size-bootleg-1 {
+    font-size: medium;
+  }
+
+  .logo-description-parent {
+    padding: 20px;
+    height: 100vh;
+  }
+
+  .intrologo-left {
+    padding-bottom: 0px;
+  }
+
+  .timeline-year {
+    color: white;
+    font-size: xx-large;
+    text-align: center;
+  }
+
+  .highlight a {
+    font-size: small;
+  }
+
+  .mob-text-center {
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-display-none {
+    display: auto;
+  }
+
+  .pc-display-none {
+    display: none;
+  }
+
+  .nav-text::after {
+    content: "Use arrow keys to navigate between images";
+  }
+
+  .bootleg-desc-1-responsive::after {
+    content: " FROM LEFT: 'Alfie' on Video CD, as 'Disc 2' on the label said, that is the second part of the movie itself; 'Woman in Love' CD-ROM, which contains a large amount of songs in MP3 with WinAmp installer inside the disc; 'Best Collection Micheal Jackson', which is an unofficial compilation of Michael Jackson songs - do note that the 'Micheal' is intentionally misspelt to follow the label itself";
+  }
+}
+
+.slider_pane:first-child {
+  display: block;
+}
+
+.conclusion-bg {
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer-spacing {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

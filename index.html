@@ -1,0 +1,1144 @@
+<!DOCTYPE html>
+<!-- The weird world of home entertainment - an interactive experience -->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      The weird world of physical home entertainment: an interactive
+      audio-visual experience
+    </title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://vjs.zencdn.net/8.10.0/video-js.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/sal.js@latest/dist/sal.min.css"
+    />
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body onload="videoPlayerInit()">
+    <main>
+      <section class="text-center cover-box-parent">
+        <div class="cover-box">
+          <div class="serif header-text">
+            <h1>
+              The weird world of<br />physical home entertainment: <br />
+              an interactive audio-visual experience
+            </h1>
+            <h4>
+              (also known as that time before everyone switches to Netflix)
+            </h4>
+          </div>
+        </div>
+      </section>
+
+      <section class="container text-center" id="introduction">
+        <div class="text-center">
+          <div class="div-block">
+            <h1 class="text-center introduction-header-text">Introduction</h1>
+            <h5>(otherwise known as "why this topic?")</h5>
+            <p>
+              You know, I grew up watching movies and shows on a DVD player
+              before my family subscribed to Netflix, so I selected this topic.
+            </p>
+            <h5 class="red-container">
+              NOTE: This page has a huge amount of multimedia content (such as
+              videos), which needed more data usage than a normal website.<br />Most
+              animations are only available on desktop devices.
+            </h5>
+          </div>
+        </div>
+      </section>
+
+      <section class="container text-center" id="formats">
+        <div class="text-center" id="formats-sub">
+          <div class="div-block overflow-hidden">
+            <h1 class="text-center">
+              An introduction to the main physical disc-based media formats in
+              home entertainment for the past few years
+              <div>
+                <div class="introduction row container">
+                  <div class="disc-formats col-lg-4 col-sm-12">
+                    <div class="formats-subtext-parent">
+                      <div class="formats-subtext">
+                        <h1>Video CD</h1>
+                        <div class="text-start">
+                          <h4>
+                            <ul>
+                              <li>the original home video format</li>
+                              <li>most movies are split into 2 discs</li>
+                              <li>cheaper than the others</li>
+                              <li>
+                                slowly declining but it's still used for karaoke
+                              </li>
+                            </ul>
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="disc">
+                      <img
+                        src="assets/images/videocd.webp"
+                        alt=""
+                        width="100%"
+                      />
+                    </div>
+                  </div>
+                  <div class="disc-formats col-lg-4 col-sm-12">
+                    <div class="formats-subtext-parent">
+                      <div class="formats-subtext">
+                        <h1>DVD</h1>
+                        <div class="text-start">
+                          <h4>
+                            <ul>
+                              <li>also known as "DVD-Video"</li>
+                              <li>
+                                in most cases, DVDs contains multiple audio and
+                                subtitles
+                              </li>
+                              <li>interactive menus</li>
+                              <li>still releasing today</li>
+                            </ul>
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="disc">
+                      <img src="assets/images/dvd.webp" alt="" width="100%" />
+                    </div>
+                  </div>
+                  <div class="disc-formats col-lg-4 col-sm-12">
+                    <div class="formats-subtext-parent">
+                      <div class="formats-subtext">
+                        <h1>Blu-ray Disc</h1>
+                        <div class="text-start">
+                          <h4>
+                            <ul>
+                              <li>same as DVD, but with Full HD video on it</li>
+                              <li>still releasing today</li>
+                              <li>
+                                another version called "Ultra HD Blu-Ray" exists
+                                with 4K video on it
+                              </li>
+                            </ul>
+                          </h4>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="disc">
+                      <img
+                        src="assets/images/bluray.webp"
+                        alt=""
+                        width="100%"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h4 class="compat-text">at the disc</h4>
+            </h1>
+          </div>
+        </div>
+      </section>
+
+      <div class="mobile-display-none" align="center">
+        <section
+          class="conclusion-parent section-non-100vh type-conclusion remove-flex"
+        >
+          <h1>Not sure about what's different between DVD and Blu-ray Disc?</h1>
+          <div class="conclusion">
+            <img
+              src="assets/images/disctypeconclusion.webp"
+              alt=""
+              width="50%"
+              class="overflow-hidden"
+            />
+          </div>
+          <h1 class="text-center addpadding">
+            This image (might) explain everything.
+          </h1>
+        </section>
+      </div>
+
+      <section
+        class="mobile-display-none intros-parent section-non-100vh type-conclusion remove-flex"
+        id="intros"
+      >
+        <div class="firstpart align-center mobile-display-none">
+          <div class="intro-first-text">
+            <h1 class="text-start">
+              The weird yet satisfying thing<br />on those discs are<br />the
+              introduction logos.
+            </h1>
+          </div>
+          <div class="mobile-display-none warning-background">
+            <div class="align-center secondpart-parent">
+              <div class="intro-first-text">
+                <div class="">
+                  <h1
+                    class="secondpart-first-text text-start before-logo-appears-color mobile-center d-sm-none d-md-flex d-lg-flex"
+                  >
+                    You know, before the logo appears, <br />there is this thing
+                    that goes like:
+                  </h1>
+                  <center>
+                    <h1
+                      class="secondpart-first-text text-start before-logo-appears-color mobile-center d-sm-flex d-md-none d-lg-none"
+                    >
+                      You know, before the logo appears, <br />there is this
+                      thing that goes like:
+                    </h1>
+                  </center>
+                  <div class="warning-box">
+                    <h4>
+                      <img
+                        src="assets/images/warning_image_sequence/01.webp"
+                        alt=""
+                        width="100%"
+                      />
+                      <img
+                        src="assets/images/warning_image_sequence/02.webp"
+                        alt=""
+                        width="100%"
+                      />
+                      <img
+                        src="assets/images/warning_image_sequence/03.webp"
+                        alt=""
+                        width="100%"
+                      />
+                      <img
+                        src="assets/images/warning_image_sequence/04.webp"
+                        alt=""
+                        width="100%"
+                      />
+                      <img
+                        src="assets/images/warning_image_sequence/05.webp"
+                        alt=""
+                        width="100%"
+                      />
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- intros pre-section - mobile version -->
+        <div class="pc-display-none">
+          <center>
+            <h1>
+              The weird yet satisfying thing on those discs are the introduction
+              logos. You know, before the logo appears, there is this thing that
+              goes like:
+              <img
+                src="assets/images/warning_image_sequence/01.webp"
+                alt=""
+                width="100%"
+              />
+              <img
+                src="assets/images/warning_image_sequence/02.webp"
+                alt=""
+                width="100%"
+              />
+              <img
+                src="assets/images/warning_image_sequence/03.webp"
+                alt=""
+                width="100%"
+              />
+              <img
+                src="assets/images/warning_image_sequence/04.webp"
+                alt=""
+                width="100%"
+              />
+              <img
+                src="assets/images/warning_image_sequence/05.webp"
+                alt=""
+                width="100%"
+              />
+            </h1>
+          </center>
+        </div>
+      </section>
+
+      <section
+        class="moobile-display-none logo-container intros-parent remove-flex"
+        id="intros-main"
+      >
+        <!-- section = wrapper -->
+
+        <div class="background-properties">
+          <div id="background-marquee">
+            <div id="content">
+              <div class="marquee-parent">
+                <div class="marquee__content">
+                  <img
+                    src="assets/images/logo-image-sequence/row1.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="marquee__content" aria-hidden="true">
+                  <img
+                    src="assets/images/logo-image-sequence/row1.webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="marquee-parent">
+                <div class="marquee__content-reverse">
+                  <img
+                    src="assets/images/logo-image-sequence/row2.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="marquee__content-reverse" aria-hidden="true">
+                  <img
+                    src="assets/images/logo-image-sequence/row2.webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="marquee-parent">
+                <div class="marquee__content">
+                  <img
+                    src="assets/images/logo-image-sequence/row3.webp"
+                    alt=""
+                  />
+                </div>
+                <div class="marquee__content" aria-hidden="true">
+                  <img
+                    src="assets/images/logo-image-sequence/row3.webp"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="marquee-overlay"></div>
+          </div>
+
+          <div class="centered row logo-description-parent">
+            <div class="col-lg-6 col-sm-12">
+              <h1 class="serif intrologo-left">Introduction logos</h1>
+              <h3 class="intrologo-left">
+                (not to be confused with title cards)
+              </h3>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+              <h4 class="force-left">
+                After the warning screen, the disc usually follows with a screen
+                that features the logo of either the studio or the distributor
+                of the disc itself. <br />
+                Some of them have weird graphics, stock music and cheesy
+                effects.
+                <br />See some known examples below:<br /><br />
+                <button onclick="logoPlayback01()" class="logobutton">
+                  Speedy Video
+                </button>
+
+                <button onclick="logoPlayback02()" class="logobutton">
+                  Warner Bros. Home Entertainment
+                </button>
+              </h4>
+            </div>
+          </div>
+          <!-- below divs are for windows for videos -->
+          <div id="logoplaybackvideo01" class="videoplaybackwindow">
+            <div class="videoplaybackwindowinner">
+              <video
+                id="my-video"
+                class="video-js"
+                controls
+                preload="auto"
+                data-setup="{}"
+              >
+                <source src="assets/videos/speedy.mp4" type="video/mp4" />
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider
+                  upgrading to a web browser that
+                  <a
+                    href="https://videojs.com/html5-video-support/"
+                    target="_blank"
+                    >supports HTML5 video</a
+                  >
+                </p>
+              </video>
+              <div id="description" class="row container">
+                <div class="col-lg-6 col-sm-12 force-left">
+                  <h2>Speedy Video</h2>
+                  <h6>Unknown date-2009</h6>
+                </div>
+                <div class="col-lg-6 col-sm-12 force-left">
+                  <p>
+                    Music: Unknown<br />Source: Magic Ring (Episode 21, Video
+                    CD)<br />
+                    <i>Speedy Video Distributors Sdn Bhd</i>
+                  </p>
+                </div>
+              </div>
+              <button class="logobutton" onclick="logoPlayback01close()">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- second logo -->
+        <div id="logoplaybackvideo02" class="videoplaybackwindow">
+          <div class="videoplaybackwindowinner">
+            <video
+              id="my-video"
+              class="video-js"
+              controls
+              preload="auto"
+              width="1280"
+              height="720"
+              data-setup="{}"
+            >
+              <source src="assets/videos/warner.mp4" type="video/mp4" />
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a
+                  href="https://videojs.com/html5-video-support/"
+                  target="_blank"
+                  >supports HTML5 video</a
+                >
+              </p>
+            </video>
+            <div id="description" class="row container">
+              <div class="col-lg-6 col-sm-12 force-left">
+                <h2>Warner Bros. Home Entertainment</h2>
+                <h6>2017-present</h6>
+              </div>
+              <div class="col-lg-6 col-sm-12 force-left">
+                <p>
+                  Music: Same as "Warner Home Video"<br />Source: Shazam!
+                  (Blu-Ray Disc)<br />
+                </p>
+              </div>
+            </div>
+            <button class="logobutton" onclick="logoPlayback02close()">
+              Close
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Menus section -->
+      <div class="menus-background">
+        <div class="menus-container container">
+          <h1 class="color-white text-center">
+            And now, here comes the menus.
+          </h1>
+          <h4 class="color-white text-center">
+            Most DVDs and Blu-ray Discs carries menus, allowing users to choose
+            what they want to watch from the disc. From the early 2000s until
+            mid-2010s, movie studios made special animations for the release of
+            the movie itself for home video. Here is a evolution of how DVD /
+            Blu-ray Disc menus look through the years:
+          </h4>
+          <div id="container" class="d-flex background-expand">
+            <div class="container force-center">
+              <div class="timeline row container">
+                <div class="col-lg-2 col-sm-1 timeline-year">
+                  1997
+                  <h1>The Exorcist</h1>
+                  <p class="description-text">
+                    <i>Warner Home Video</i><br />"The Version You've Never
+                    Seen"
+                  </p>
+                </div>
+                <div class="col-lg-4 col-sm-1 timeline-description color-white">
+                  <div class="img-div">
+                    <img
+                      src="assets/images/timeline-images/01.webp"
+                      alt=""
+                      width="100%"
+                    />
+
+                    <div class="highlight">
+                      <a href="https://www.youtube.com/watch?v=NzOv0wmhhrQ"
+                        >Walkthrough available on YouTube. Click here to
+                        watch</a
+                      >
+                    </div>
+                  </div>
+                  <ul>
+                    <li><h5>Menu contents are still images</h5></li>
+                    <li>
+                      <h5>
+                        Biographies of casts and production notes included in
+                        bonus features as interactive form
+                      </h5>
+                    </li>
+                  </ul>
+                </div>
+                <!-- line break -->
+                <div class="col-lg-2 col-sm-1 timeline-year">
+                  2002
+                  <h1>Rat Race</h1>
+                  <p class="description-text">
+                    <i>Paramount Pictures Home Entertainment</i><br />
+                  </p>
+                </div>
+                <div class="col-lg-4 col-sm-1 timeline-description color-white">
+                  <div class="img-div">
+                    <img
+                      src="assets/images/timeline-images/02.webp"
+                      alt=""
+                      width="100%"
+                    />
+
+                    <div class="highlight">
+                      <a href="https://www.youtube.com/watch?v=aK10DRoyxb4"
+                        >Walkthrough available on YouTube. Click here to
+                        watch</a
+                      >
+                    </div>
+                  </div>
+                  <ul>
+                    <li>
+                      <h5>
+                        DVD menu animation made with existing movie assets
+                        (including posters)
+                      </h5>
+                    </li>
+                    <li>
+                      <h5>Including transitioning animations between menus</h5>
+                    </li>
+                  </ul>
+                </div>
+                <!-- line break -->
+                <div class="col-lg-2 col-sm-1 timeline-year">
+                  2004
+                  <h1>Shrek 2</h1>
+                  <p class="description-text">
+                    <i>DreamWorks Home Entertainment</i><br />
+                  </p>
+                </div>
+                <div class="col-lg-4 col-sm-1 timeline-description color-white">
+                  <div class="img-div">
+                    <img
+                      src="assets/images/timeline-images/03.webp"
+                      alt=""
+                      width="100%"
+                    />
+
+                    <div class="highlight">
+                      <a href="https://www.youtube.com/watch?v=nhujBga39vI"
+                        >Walkthrough available on YouTube. Click here to
+                        watch</a
+                      >
+                    </div>
+                  </div>
+                  <ul>
+                    <li>
+                      <h5>
+                        DVD-exclusive original material, not included in the
+                        movie itself
+                      </h5>
+                    </li>
+                    <li>
+                      <h5>
+                        Includes mini-games made using existing DVD menu
+                        technology
+                      </h5>
+                    </li>
+                  </ul>
+                </div>
+                <!-- line break -->
+                <div class="col-lg-2 col-sm-1 timeline-year">
+                  2005
+                  <h1>Memento</h1>
+                  <p class="description-text">
+                    <i>Sony Pictures Home Entertainment</i><br />Widescreen
+                    Two-disc Limited Edition
+                  </p>
+                </div>
+                <div class="col-lg-4 col-sm-1 timeline-description color-white">
+                  <div class="img-div">
+                    <img
+                      src="assets/images/timeline-images/04.webp"
+                      alt=""
+                      width="100%"
+                    />
+
+                    <div class="highlight">
+                      <a href="https://www.youtube.com/watch?v=6yDrua56wEM"
+                        >Walkthrough available on YouTube. Click here to
+                        watch</a
+                      >
+                    </div>
+                  </div>
+                  <ul>
+                    <li>
+                      <h5>
+                        Hard-to-navigate but matches the theme of the movie
+                        itself
+                      </h5>
+                    </li>
+                  </ul>
+                </div>
+                <!-- line break -->
+                <div class="col-lg-2 col-sm-1 timeline-year">
+                  2008
+                  <h1>Ratatouille</h1>
+                  <p class="description-text">
+                    <i>Walt Disney Studios Home Entertainment</i><br />
+                  </p>
+                </div>
+                <div class="col-lg-4 col-sm-1 timeline-description color-white">
+                  <div class="img-div">
+                    <img
+                      src="assets/images/timeline-images/05.webp"
+                      alt=""
+                      width="100%"
+                    />
+
+                    <div class="highlight">
+                      <a href="https://www.youtube.com/watch?v=kWSdKXQGrl4"
+                        >Walkthrough available on YouTube. Click here to
+                        watch</a
+                      >
+                    </div>
+                  </div>
+                  <ul>
+                    <li>
+                      <h5>
+                        Menu graphics animated exclusively for this release
+                      </h5>
+                    </li>
+                    <li>
+                      <h5>Features made-for-DVD easter eggs</h5>
+                    </li>
+                    <li>
+                      <h5>
+                        Blu-ray version does not have menus for scene selections
+                        and extras, but has an additional Java-based minigame
+                        called "Gusteau's Gourmet Game"
+                      </h5>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-2 col-sm-1 timeline-year">
+                  2009
+                  <h1>Fantastic Mr. Fox</h1>
+                  <p class="description-text">
+                    <i>20th Century Fox Home Entertainment</i><br />
+                  </p>
+                </div>
+                <div class="col-lg-4 col-sm-1 timeline-description color-white">
+                  <div class="img-div">
+                    <img
+                      src="assets/images/timeline-images/06.webp"
+                      alt=""
+                      width="100%"
+                    />
+
+                    <div class="highlight">
+                      <a href="https://www.youtube.com/watch?v=sBflj8SwruY"
+                        >Walkthrough available on YouTube. Click here to
+                        watch</a
+                      >
+                    </div>
+                  </div>
+                  <ul>
+                    <li>
+                      <h5>
+                        Similar to DVD menus for movies directed by Wes
+                        Anderson, menu features still images from the movie
+                        itself
+                      </h5>
+                    </li>
+                    <li>
+                      <h5>
+                        For Blu-ray discs, due to the menu allowing user to
+                        navigate through a pop-up style menu, there is only one
+                        image at the background
+                      </h5>
+                    </li>
+                  </ul>
+                </div>
+                <!-- line break -->
+                <div class="col-lg-2 col-sm-1 timeline-year">
+                  2014
+                  <h1>Frozen</h1>
+                  <p class="description-text">
+                    <i>Walt Disney Studios Home Entertainment</i><br />
+                  </p>
+                </div>
+                <div class="col-lg-4 col-sm-1 timeline-description color-white">
+                  <div class="img-div">
+                    <img
+                      src="assets/images/timeline-images/07.webp"
+                      alt=""
+                      width="100%"
+                    />
+
+                    <div class="highlight">
+                      <a href="https://www.youtube.com/watch?v=IQIoyUd_glI"
+                        >Walkthrough available on YouTube. Click here to
+                        watch</a
+                      >
+                    </div>
+                  </div>
+                  <ul>
+                    <li>
+                      <h5>Main menu features footage from the movie itself</h5>
+                    </li>
+                    <li>
+                      <h5>On the DVD version, other menus are still images</h5>
+                    </li>
+                  </ul>
+                </div>
+                <!-- line break -->
+                <div class="col-lg-2 col-sm-1 timeline-year">
+                  2022
+                  <h1>Minions: The Rise of Gru</h1>
+                  <p class="description-text">
+                    <i>Universal Studios Home Entertainment</i><br />
+                  </p>
+                </div>
+                <div class="col-lg-4 col-sm-1 timeline-description color-white">
+                  <div class="img-div">
+                    <img
+                      src="assets/images/timeline-images/08.webp"
+                      alt=""
+                      width="100%"
+                    />
+
+                    <div class="highlight">
+                      <a
+                        href="https://www.youtube.com/watch?v=pQyvaa6nGsM&themeRefresh=1"
+                        >Walkthrough available on YouTube. Click here to
+                        watch</a
+                      >
+                    </div>
+                  </div>
+                  <ul>
+                    <li>
+                      <h5>
+                        Most studios are using this menu template for recent DVD
+                        and Blu-ray Disc releases
+                      </h5>
+                    </li>
+                    <li>
+                      <h5>
+                        The poster art of the movie is used with small details
+                        of graphics moving
+                      </h5>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="force-center">
+            <h4 class="text-center color-white">
+              Typical, generic menu styles used on home media include:
+            </h4>
+            <div class="row container d-flex justify-content-center">
+              <div class="col-lg-3 col sm 6">
+                <img
+                  src="assets/images/timeline-images/other/01.webp"
+                  alt=""
+                  width="100%"
+                />
+                <div class="color-white">
+                  <h3>Universal Studios</h3>
+                  <p>
+                    Example shown: "How The Grinch Stole Christmas" (Blu-ray)
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-3 col sm 6">
+                <img
+                  src="assets/images/timeline-images/other/02.webp"
+                  alt=""
+                  width="100%"
+                />
+                <div class="color-white">
+                  <h3>Warner Bros. Home Entertainment</h3>
+                  <p>Example shown: "Corpse Bride" (Blu-ray)</p>
+                </div>
+              </div>
+              <div class="col-lg-3 col sm 6">
+                <img
+                  src="assets/images/timeline-images/other/03.webp"
+                  alt=""
+                  width="100%"
+                />
+                <div class="color-white">
+                  <h3>The Criterion Collection</h3>
+                  <p>Example shown: "Akira Kurosawa's Dreams" (Blu-ray)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- new section -->
+    <main id="bootlegs mobile-display-none">
+      <div class="bootlegs-header bootleg-header-anim-1">
+        <div class="bootlegs-center-text">
+          <h1 class="text-start bootleg-anim-1">
+            Another variant of physical media is the <br />
+            "urban legend", the bootlegs.
+          </h1>
+        </div>
+      </div>
+      <div class="bootlegs-header bootleg-header-anim-2">
+        <div class="bootlegs-center-text">
+          <h1 class="text-start bootleg-anim-2">
+            In most Asian countries, those are <br />sold at a low price, for
+            example, in Malaysia, <br />it's sold for RM5.
+          </h1>
+        </div>
+      </div>
+      <div class="bootlegs-header bootleg-header-anim-3">
+        <div class="bootlegs-center-text">
+          <h1 class="text-start bootleg-anim-3">
+            Before this part begins, let's begin with<br />an obligatory
+            introduction video.
+          </h1>
+        </div>
+      </div>
+      <!-- "why should we buy the gold disc" part -->
+      <div class="bootlegs-header bootleg-header-anim-4">
+        <div class="bootlegs-center-text">
+          <h1 class="text-start bootleg-anim-4 golddisc-vid">
+            <video
+              id="golddisc"
+              class="video-js golddisc-vid"
+              controls
+              preload="auto"
+              data-setup="{}"
+            >
+              <source src="assets/videos/golddisc.mp4" type="video/mp4" />
+              <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider
+                upgrading to a web browser that
+                <a
+                  href="https://videojs.com/html5-video-support/"
+                  target="_blank"
+                  >supports HTML5 video</a
+                >
+              </p>
+            </video>
+            <div class="width-100">
+              <button
+                class="logobutton skip-button-text-override width-wider-overwrite"
+                onclick="location.href='#bootlegs-main';"
+              >
+                Skip
+              </button>
+            </div>
+          </h1>
+        </div>
+      </div>
+    </main>
+
+    <!-- bootlegs - main part -->
+    <main id="bootlegs-main">
+      <div class="bootlegs-main-bg width-100 bootlegs-main-container-spacing">
+        <div class="container color-white">
+          <h1 align="center">...and these are the bootlegs.</h1>
+          <h4 align="center">
+            Technically, it's always sold by street vendors on those night
+            markets (<i>pasar malam</i> in Malay). But, here are some facts
+            about those bootleg DVDs...
+          </h4>
+          <div class="container row">
+            <div class="col-lg-4 col-sm-12">
+              <h3 class="text-center">
+                They usually have bad subtitle translations.
+              </h3>
+              <h5 class="mobile-align-center">
+                Since I have only some of those discs "surviving" at my room
+                (including <i>Mae Nak</i> and Barbie's Thumbelina), but the
+                subtitles are directly "thrown" into a translation service, such
+                as Google Translate. Since translation technology isn't that
+                advance that time, it usually gives out badly-made translations.
+              </h5>
+              <img src="" alt="" />
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <h3 class="text-center">Quality</h3>
+              <h5 class="mobile-align-center">
+                Most of them are recorded in theaters. Since recording in
+                theater is illegal, they have to do it secretly, which caused
+                the bad audio and video quality. Subtitles on the DVD itself are
+                mostly transcribed using a "text-to-speech" service, which makes
+                the subtitles inaccurate for most of the times.
+              </h5>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+              <h3 class="text-center">Bootlegs has begun decades ago</h3>
+              <h5 class="bootleg-cover-art mobile-align-center">
+                Before the rise of DVD bootlegs, there are bootlegs on VHS and
+                Video CDs - these are common in the early 2000s. Since my family
+                still keep some of those,
+              </h5>
+              <button
+                onclick="bootlegCoverArt()"
+                class="logobutton logobutton-override"
+              >
+                View gallery
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Pop-up div: Bootleg cover art -->
+      <!-- WHAT TO DO: arrow keys (desktop), "prev" / "next" button (mobile) which runs a function that shows up another div as a slide and stuff -->
+      <div>
+        <div id="bootlegcoverart" class="bootlegcoverart">
+          <button id="close" onclick="bootlegCoverArtClose()">
+            <i class="bi bi-x"></i>
+          </button>
+          <div class="d-inline-block mobile-full-width-image">
+            <div class="color-white slider_pane" id="div-1">
+              <center>
+                <div class="row container mobile-display-none">
+                  <div class="col-sm-6 col-md-6 col-lg-4 mobile-display-none">
+                    <img
+                      src="assets/images/bootleg-slideshow/div01/01.webp"
+                      alt=""
+                      class="bootleg-img-div-1"
+                    />
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-4 mobile-display-none">
+                    <img
+                      src="assets/images/bootleg-slideshow/div01/02.webp"
+                      alt=""
+                      class="bootleg-img-div-1"
+                    />
+                  </div>
+                  <div class="col-sm-6 col-md-6 col-lg-4 mobile-display-none">
+                    <img
+                      src="assets/images/bootleg-slideshow/div01/03.webp"
+                      alt=""
+                      class="bootleg-img-div-1"
+                    />
+                  </div>
+                </div>
+                <div class="pc-display-none">
+                  <img
+                    src="assets/images/bootleg-slideshow/div01/div01_mobile.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+              </center>
+              <h4
+                class="mob-size-bootleg-1 text-center container bootleg-desc-1-responsive"
+              >
+                Images of bootleg disc labels.
+              </h4>
+            </div>
+            <div class="color-white slider_pane" id="div-2">
+              <center>
+                <div class="row container mobile-display-none">
+                  <div class="row container mobile-display-none">
+                    <div class="col-12 mobile-display-none">
+                      <img
+                        src="assets/images/bootleg-slideshow/div02/div02_desktop.webp"
+                        alt=""
+                        class="bootleg-img-div-1"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="pc-display-none">
+                  <img
+                    src="assets/images/bootleg-slideshow/div02/div02_mobile.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+              </center>
+              <h4 class="text-center container bootleg-desc-2-responsive">
+                Front / back disc cover for a bootleg Video CD copy of "A
+                Cinderella Story".
+              </h4>
+            </div>
+            <div class="color-white slider_pane" id="div-3">
+              <center>
+                <div class="row container mobile-display-none">
+                  <div class="row container mobile-display-none">
+                    <div class="col-12 mobile-display-none">
+                      <img
+                        src="assets/images/bootleg-slideshow/div03/div03_desktop.webp"
+                        alt=""
+                        class="bootleg-img-div-1"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="pc-display-none">
+                  <img
+                    src="assets/images/bootleg-slideshow/div03/div03_mobile.webp"
+                    alt=""
+                    width="100%"
+                  />
+                </div>
+              </center>
+              <h4 class="text-center container bootleg-desc-2-responsive">
+                Menu for a "Kung Fu Dunk" bootleg DVD. Do note that the Chinese
+                / English / Malay / Thai subtitle selections are the same across
+                most of the bootleg discs.
+              </h4>
+            </div>
+
+            <h6
+              class="color-white text-center d-sm-none d-md-none d-lg-block nav-text"
+            ></h6>
+            <div
+              class="d-sm-flex d-md-flex d-lg-none color-white"
+              align="center"
+            >
+              <button class="logobutton" onclick="simulateKey(37);">
+                <i class="bi bi-caret-left-fill"></i>
+              </button>
+              <button class="logobutton" onclick="simulateKey(39);">
+                <i class="bi bi-caret-right-fill"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <main id="conclusion">
+      <div class="conclusion-bg color-white">
+        <div class="container">
+          <h1 class="text-center">Conclusion</h1>
+          <h5 class="text-center">
+            Although there is a rise on online streaming services such as
+            Netflix and Disney+, studios still release their movies and shows on
+            physical media due to its better picture and sound quality, bonus
+            features, commentary and so on. There's even a community which
+            collects these type of media formats. In conclusion, physical media
+            is still alive when there's a need for watching stuff without even
+            subscribing to streaming services.
+          </h5>
+          <h1 class="text-center">Credits</h1>
+          <div class="row container">
+            <div class="col-lg-4 col-sm-12 color-white">
+              <h4 class="mob-text-center">Images</h4>
+              <h5>
+                All images (menus, disc labels, cover image) captured by me from
+                my own collection except:<br />The Exorcist menu (<a
+                  href="https://www.youtube.com/watch?v=NzOv0wmhhrQ"
+                  >source</a
+                >)
+                <br />
+                Memento menu (<a
+                  href="https://www.youtube.com/watch?v=6yDrua56wEM"
+                  >source</a
+                >) <br /><br />
+                Disc labels and covers scanned with a Canon E470 printer. For
+                more image credits, see <a href="credits.txt">here</a> (text
+                file).
+              </h5>
+            </div>
+            <div class="col-lg-4 col-sm-12 color-white">
+              <h4 class="mob-text-center">Videos</h4>
+              <h5>
+                <i>Speedy Video</i> logo sourced from Magic Ring - Episode 16
+                (Video CD) <br /><i>Gold Disc vs Purple Disc</i> introduction
+                sourced from a pirated copy of Barbie: Thumbelina (DVD)<br />
+                <i>Warner Bros. Home Entertainment</i> logo sourced from Shazam!
+                (Blu-ray)<br />
+              </h5>
+            </div>
+            <div class="col-lg-4 col-sm-12 color-white">
+              <h4 class="mob-text-center">Technologies used</h4>
+              <h5>
+                <ul>
+                  <li>
+                    HTML / CSS
+                    <ul>
+                      <li>
+                        <a href="https://getbootstrap.com">Bootstrap 5</a>
+                      </li>
+                      <li>
+                        <a href="https://icons.getbootstrap.com"
+                          >Bootstrap Icons</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    JavaScript
+                    <ul>
+                      <li><a href="https://gsap.com">GSAP</a></li>
+                      <li><a href="https://jquery.com/">jQuery</a></li>
+                      <li><a href="https://videojs.com/">video.js</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- "do i have to sign this document with the weirdest closing statement ever" -->
+    <div class="footer-spacing container">
+      <h6 class="text-center">
+        <i
+          >After 1144 lines of HTML code, 634 lines of CSS code, 241 lines of
+          JavaScript, 35 multimedia files and 1 Stack Overflow question, I
+          finally figured out how to make an interactive website. Just so you
+          know I have to finish the entire thing with "&copy; 2024. All rights
+          reserved" because I (kind of) need to.
+        </i>
+      </h6>
+    </div>
+  </body>
+  <!-- GSAP -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+  <!-- custom scripts and stuff -->
+  <script src="assets/js/animation.js"></script>
+  <script src="assets/js/misc.js"></script>
+  <script src="assets/js/videoplayback.js"></script>
+  <script src="assets/js/KeyEventSimulator.js"></script>
+  <!-- other scripts -->
+  <script src="https://vjs.zencdn.net/8.10.0/video.min.js"></script>
+  <script src="
+https://cdn.jsdelivr.net/npm/isinviewport@1.0.0/isInViewport.min.js
+"></script>
+</html>
